@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+{% if Release != None %}
+<div id="Current">
+   Working on: {{ Release }}
+</div>
+{% endif %}
+
+<form action = "http://localhost:5000/working/{{Release}}" method = "POST">
+    <label for="RELASE DATE">RELEASE DATE:</label>
+    <input type="date" id="RELASEDATE" name="RELASEDATE">
+    <input type="text" id="RELASEDATE" name="ALTTEXT">
+    <input type="submit" value="SET">
+ </form>
+ <form action = "http://localhost:5000/create/{{Release}}" method = "POST">
+   <input type="checkbox" id="fullRel" name="fullRel" value="fullRel" checked>
+   <label for="fullRel"> Create Folders for Full Release</label><br>
+{% if foldersCreated %}
+   <input id="noGo" type="submit" value="Create Folders" disabled>
+{% else %} 
+   <input id="G2G" type="submit" value="Create Folders" >
+{% endif %}
+</form>
+{% if foldersCreated %}
+<a id="G2G" href="http://localhost:5000/SDIYM/{{Release}}">Process Release</a>
+{% else %}
+<a id='noGo' href="http://localhost:5000/working/{{Release}}">Process Release</a>
+{% endif %}
+
+{% if readyTolabel %}
+<a id="G2G" href="http://localhost:5000/label/{{Release}}">Add Labels</a>
+{% else %}
+<a id='noGo' href="http://localhost:5000/working/{{Release}}">Add Labels</a>
+{% endif %}
+<p>Created By SPEX CNC department</p>
+{% endblock %}

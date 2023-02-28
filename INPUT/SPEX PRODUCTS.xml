@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRODUCTS>
+//--------------- HC ----------------------------
+    <PRODUCT name="1149-XXXX-0HC">
+        <FIRST>1149</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0HC</THIRD>
+        <FORTH>ANY</FORTH>
+        <PATTERN>1149-XXXX-0HC</PATTERN>
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>LABEL=CUBES</VAR>
+        <VAR>SSSUBTRACTOR=0</VAR>
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_D.csv</PATH>
+            <GIVE>DEPTH</GIVE>
+            <GET>ROWS</GET>
+        </RULE> 
+        
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_D.csv</PATH>
+            <GIVE>DEPTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+       
+    </PRODUCT>
+    <PRODUCT name='1105_0HC'>
+        <FIRST>1105</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0HC</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>NONE</PATTERN>    
+        <CONTAINS>1125-XXXX-0HC</CONTAINS>
+        <CONTAINS>1135-XXXX-0HC</CONTAINS>
+        <CONTAINS>1145-XXXX-0HC</CONTAINS>
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+       
+    </PRODUCT>
+    <PRODUCT name='1125-XXXX-0HC'>
+        <FIRST>1125</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0HC</THIRD>
+        <FORTH>ANY</FORTH>
+        <PATTERN>1125-XXXX-0HC</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>BOARDERCOLOUR</VAR>
+        <VAR>BOARDERCOLOURLH</VAR>
+        <VAR>BOARDERCOLOURRH</VAR>
+        <VAR>ID</VAR>
+        <VAR>BASEHEIGHT</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>BASEHEIGHT</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURLH</GET>
+        </RULE> 
+                <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURRH</GET>
+        </RULE> 
+    </PRODUCT>
+    <PRODUCT name='1145-XXXX-0HC'>
+        <FIRST>1145</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0HC</THIRD>
+        <FORTH>ANY</FORTH>
+        <PATTERN>1145-XXXX-0HC</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+        <VAR>MATFOAM</VAR>
+        <VAR>ISCHIALRAD</VAR>
+        <VAR>ID</VAR>
+        <CONTAINS>1149-XXXX-0HC</CONTAINS>
+        <CONTAINS>1105-XXXX-0HC-UP</CONTAINS>
+
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>MATFOAM</GET>
+        </RULE> 
+         <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>MATFOAM</GET>
+        </RULE>        
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALRAD</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC-XLELLAFOAM.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+
+
+        </PRODUCT>
+        <PRODUCT name='Circle 150 Palmhive'>
+        <FIRST>1275</FIRST>
+        <SECOND>0011</SECOND>
+        <THIRD>000</THIRD>
+        <FORTH>ANY</FORTH>
+        <PATTERN>1275-0011-000-P</PATTERN>    
+        <VAR>ID</VAR>
+        <LABEL>CIRCLE</LABEL>
+        <VAR>BOARDERCOLOUR</VAR>
+       
+    </PRODUCT>
+    <PRODUCT name='1105-XXXX-0HC-UP'>
+        <FIRST>1105</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0HC</THIRD>
+        <FORTH>UP</FORTH>
+        <PATTERN>1105-XXXX-0HC-UP</PATTERN>    
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+       
+    </PRODUCT>
+
+//---------------SC-----------------------------
+    <PRODUCT name="1149-XXXX-0SC">
+        <FIRST>1149</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SC</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>1149-XXXX-0SC</PATTERN>
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>LABEL=CUBES</VAR>
+        <VAR>SSSUBTRACTOR=0</VAR>
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SC_SPEC_D.csv</PATH>
+            <GIVE>DEPTH</GIVE>
+            <GET>ROWS</GET>
+        </RULE> 
+        
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SC_SPEC_D.csv</PATH>
+            <GIVE>DEPTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+       
+    </PRODUCT>
+    <PRODUCT name='1105_0SC'>
+        <FIRST>1105</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SC</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>NONE</PATTERN>    
+        <CONTAINS>1125-XXXX-0SC</CONTAINS>
+        <CONTAINS>1135-XXXX-0SC</CONTAINS>
+        <CONTAINS>1145-XXXX-0SC</CONTAINS>
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+       
+    </PRODUCT>
+    <PRODUCT name='1125-XXXX-0SC'>
+        <FIRST>1125</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SC</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>1125-XXXX-0SC</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>BOARDERCOLOUR</VAR>
+        <VAR>BOARDERCOLOURLH</VAR>
+        <VAR>BOARDERCOLOURRH</VAR>
+        <VAR>ID</VAR>
+        <VAR>BASEHEIGHT</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>BASEHEIGHT</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURLH</GET>
+        </RULE> 
+                <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURRH</GET>
+        </RULE> 
+    </PRODUCT>
+    <PRODUCT name='1145-XXXX-0SC'>
+        <FIRST>1145</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SC</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>1145-XXXX-0SC</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+        <VAR>MATFOAM</VAR>
+        <VAR>ISCHIALRAD</VAR>
+        <VAR>ID</VAR>
+        <CONTAINS>1149-XXXX-0SC</CONTAINS>
+        <CONTAINS>1105-XXXX-0SC-UP</CONTAINS>
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>MATFOAM</GET>
+        </RULE> 
+         <RULE>
+            <PATH>INPUT\1105-XXXX-0SC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>MATFOAM</GET>
+        </RULE>        
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALRAD</GET>
+        </RULE> 
+
+    </PRODUCT>
+    <PRODUCT name='1105-XXXX-0SC-UP'>
+        <FIRST>1105</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SC</THIRD>
+        <FORTH>UP</FORTH>
+        <PATTERN>1105-XXXX-0SC-UP</PATTERN>    
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+       
+    </PRODUCT>
+
+//---------------SS-----------------------------
+    <PRODUCT name="1149-XXXX-0SS">
+        <FIRST>1149</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SS</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>1149-XXXX-0SS</PATTERN>
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>LABEL=CUBES</VAR>
+        <VAR>SSSUBTRACTOR=-0.5</VAR>
+        //--SUBTRACT HALF INCH FOR SS AND SH
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_D.csv</PATH>
+            <GIVE>DEPTH</GIVE>
+            <GET>ROWS</GET>
+        </RULE> 
+        
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_D.csv</PATH>
+            <GIVE>DEPTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+       
+    </PRODUCT>
+    <PRODUCT name='1105_0SS'>
+        <FIRST>1105</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SS</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>NONE</PATTERN>    
+        <CONTAINS>1125-XXXX-0SS</CONTAINS>
+        <CONTAINS>1135-XXXX-0SS</CONTAINS>
+        <CONTAINS>1145-XXXX-0SS</CONTAINS>
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+       
+    </PRODUCT>
+    <PRODUCT name='1125-XXXX-0SS'>
+        <FIRST>1125</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SS</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>1125-XXXX-0SS</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>BOARDERCOLOUR</VAR>
+        <VAR>BOARDERCOLOURLH</VAR>
+        <VAR>BOARDERCOLOURRH</VAR>
+        <VAR>ID</VAR>
+        <VAR>BASEHEIGHT</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>BASEHEIGHT</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURLH</GET>
+        </RULE> 
+                <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURRH</GET>
+        </RULE> 
+    </PRODUCT>
+    <PRODUCT name='1145-XXXX-0SS'>
+        <FIRST>1145</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SS</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>1145-XXXX-0SS</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+        <VAR>MATFOAM</VAR>
+        <VAR>ISCHIALRAD</VAR>
+        <VAR>ID</VAR>
+        <CONTAINS>1149-XXXX-0SS</CONTAINS>
+        <CONTAINS>1105-XXXX-0SS-UP</CONTAINS>
+
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>MATFOAM</GET>
+        </RULE> 
+         <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>MATFOAM</GET>
+        </RULE>        
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALRAD</GET>
+        </RULE> 
+    </PRODUCT>
+    <PRODUCT name='1105-XXXX-0SS-UP'>
+        <FIRST>1105</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SS</THIRD>
+        <FORTH>UP</FORTH>
+        <PATTERN>1105-XXXX-0SS-UP</PATTERN>    
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+       
+    </PRODUCT>
+
+//---------------SH-----------------------------
+
+    <PRODUCT name="1149-XXXX-0SS">
+        <FIRST>1149</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SH</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>1149-XXXX-0SH</PATTERN>
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>LABEL=CUBES</VAR>
+        <VAR>SSSUBTRACTOR=-0.5</VAR>
+        //--SUBTRACT HALF INCH FOR SS AND SH
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_D.csv</PATH>
+            <GIVE>DEPTH</GIVE>
+            <GET>ROWS</GET>
+        </RULE> 
+        
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_D.csv</PATH>
+            <GIVE>DEPTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+       
+    </PRODUCT>
+    <PRODUCT name='1105_0SS'>
+        <FIRST>1105</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SH</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>NONE</PATTERN>    
+        <CONTAINS>1125-XXXX-0SH</CONTAINS>
+        <CONTAINS>1135-XXXX-0SH</CONTAINS>
+        <CONTAINS>1145-XXXX-0SH</CONTAINS>
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+       
+    </PRODUCT>
+    <PRODUCT name='1125-XXXX-0SH'>
+        <FIRST>1125</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SH</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>1125-XXXX-0SH</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>BOARDERCOLOUR</VAR>
+        <VAR>BOARDERCOLOURLH</VAR>
+        <VAR>BOARDERCOLOURRH</VAR>
+        <VAR>ID</VAR>
+        <VAR>BASEHEIGHT</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>BASEHEIGHT</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURLH</GET>
+        </RULE> 
+                <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURRH</GET>
+        </RULE> 
+    </PRODUCT>
+    <PRODUCT name='1145-XXXX-0SH'>
+        <FIRST>1145</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SH</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>1145-XXXX-0SH</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+        <VAR>MATFOAM</VAR>
+        <VAR>ISCHIALRAD</VAR>
+        <VAR>ID</VAR>
+        <CONTAINS>1149-XXXX-0SH</CONTAINS>
+        <CONTAINS>1105-XXXX-0SH-UP</CONTAINS>
+
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>MATFOAM</GET>
+        </RULE> 
+         <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>MATFOAM</GET>
+        </RULE>        
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0SS_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALRAD</GET>
+        </RULE> 
+    </PRODUCT>
+    <PRODUCT name='1105-XXXX-0SH-UP'>
+        <FIRST>1105</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0SH</THIRD>
+        <FORTH>UP</FORTH>
+        <PATTERN>1105-XXXX-0SH-UP</PATTERN>    
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+       
+    </PRODUCT>
+//----------------1103 HC---------------------------------
+    <PRODUCT name='1103_0HC'>
+        <FIRST>1103</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0HC</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>NONE</PATTERN>    
+        <CONTAINS>1123-XXXX-0HC</CONTAINS>
+        <CONTAINS>1133-XXXX-0HC</CONTAINS>
+        <CONTAINS>1143-XXXX-0HC</CONTAINS>
+        <VAR>ID</VAR>
+        <VAR>WIDTH=14</VAR>
+        <VAR>DEPTH=16</VAR>
+       
+    </PRODUCT>
+    <PRODUCT name='1123-XXXX-0HC'>
+        <FIRST>1123</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0HC</THIRD>
+        <FORTH>ANY</FORTH>
+        <PATTERN>1123-XXXX-0HC</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>BOARDERCOLOUR</VAR>
+        <VAR>BOARDERCOLOURLH</VAR>
+        <VAR>BOARDERCOLOURRH</VAR>
+        <VAR>ID</VAR>
+        <VAR>BASEHEIGHT</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>BASEHEIGHT</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1103-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURLH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-COLOURS.csv</PATH>
+            <GIVE>BOARDERCOLOUR</GIVE>
+            <GET>BOARDERCOLOURRH</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1103-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>VIGWEDGEHEIGHT</GET>
+        </RULE>
+        <RULE>
+            <PATH>INPUT\1103-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>VIGWEDGEDEPTH</GET>
+        </RULE>  
+    </PRODUCT>
+    <PRODUCT name='1143-XXXX-0HC'>
+        <FIRST>1145</FIRST>
+        <SECOND>ANY</SECOND>
+        <THIRD>0HC</THIRD>
+        <FORTH>ANY</FORTH>
+        <PATTERN>1143-XXXX-0HC</PATTERN>
+        <VAR>WIDTH</VAR>
+        <VAR>DEPTH</VAR>
+        <VAR>ROWS</VAR>
+        <VAR>ISCHIALWIDTH</VAR>
+        <VAR>MATFOAM</VAR>
+        <VAR>ISCHIALRAD</VAR>
+        <VAR>ID</VAR>
+
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>MATFOAM</GET>
+        </RULE> 
+         <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALWIDTH</GET>
+        </RULE>        
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>ISCHIALRAD</GET>
+        </RULE> 
+        <RULE>
+            <PATH>INPUT\1105-XXXX-0HC-XLELLAFOAM.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>PATTERN</GET>
+        </RULE> 
+    </PRODUCT>
+//----------------HEADREST--------------------------
+    <PRODUCT name='Circle 150 Palmhive'>
+        <FIRST>1275</FIRST>
+        <SECOND>0011</SECOND>
+        <THIRD>000</THIRD>
+        <FORTH>ANY</FORTH>
+        <PATTERN>1275-0011-000-P</PATTERN>    
+        <VAR>ID</VAR>
+        <LABEL>CIRCLE 150</LABEL>
+        <VAR>BOARDERCOLOUR</VAR>
+    </PRODUCT>
+    <PRODUCT name='Circle 250 Palmhive'>
+        <FIRST>1275</FIRST>
+        <SECOND>0062</SECOND>
+        <THIRD>000</THIRD>
+        <FORTH>ANY</FORTH>
+        <PATTERN>1275-0062-000-P</PATTERN>    
+        <VAR>ID</VAR>
+        <LABEL>CIRCLE 250</LABEL>
+        <VAR>BOARDERCOLOUR</VAR>
+    </PRODUCT>    
+//------------------------------------------------      
+    
+    <PRODUCT name="1255-XXXX-0SS-FIB">
+            <FIRST>1255</FIRST>
+            <SECOND>ANY</SECOND>
+            <THIRD>0SS</THIRD>
+            <FORTH>FIB</FORTH>
+            <PATTERN>1255-XXXX-0SS-FIB</PATTERN>
+            <VAR>ID</VAR>
+            <VAR>HEIGHT=14</VAR>
+            <VAR>WIDTH=16</VAR>
+            <VAR>ROWSCOUNT=1</VAR>
+            <VAR>COLCOUNT=1</VAR>
+            <VAR>TOPRADIUS=11</VAR>
+            <VAR>BOTTOMRADIUS=6</VAR>
+            <VAR>LABEL=INNER</VAR>
+            <VAR>SIZE</VAR>
+            <RULE>
+                <PATH>INPUT\1255-XXXX-XXX-INNER.csv</PATH>
+                <GIVE>SIZE</GIVE>
+                <GET>ROWSCOUNT</GET>
+            </RULE> 
+               <RULE>
+                <PATH>INPUT\1255-XXXX-XXX-INNER.csv</PATH>
+                <GIVE>SIZE</GIVE>
+                <GET>COLCOUNT</GET>
+            </RULE> 
+    </PRODUCT>
+//------------------------XLELLA BACKREST---------------------------
+    
+    <PRODUCT name="1258-XXXX-OOH">
+            <FIRST>1258</FIRST>
+            <SECOND>ANY</SECOND>
+            <THIRD>OOH</THIRD>
+            <FORTH>NONE</FORTH>
+            <PATTERN>NONE</PATTERN>
+            <VAR>ID</VAR>
+            <VAR>HEIGHT=14</VAR>
+            <VAR>DEPTH=16</VAR>
+            <VAR>LABEL=XLELLA VIGOUR</VAR>
+            <CONTAINS>1258-XXXX-OOH-C</CONTAINS>
+            <CONTAINS>1258-XXXX-OOH-F</CONTAINS>
+    </PRODUCT>
+    <PRODUCT name="1258-XXXX-OOH-C">
+            <FIRST>1258</FIRST>
+            <SECOND>ANY</SECOND>
+            <THIRD>OOH</THIRD>
+            <FORTH>C</FORTH>
+            <PATTERN>1258-XXXX-OOH-C</PATTERN>
+            <VAR>ID</VAR>
+            <VAR>HEIGHT=14</VAR>
+            <VAR>DEPTH=16</VAR>
+            <VAR>LABEL=XLELLA VIGOUR</VAR>
+            <VAR>BOARDERCOLOUR</VAR>
+    </PRODUCT>
+    <PRODUCT name="1258-XXXX-OOH-F">
+            <FIRST>1258</FIRST>
+            <SECOND>ANY</SECOND>
+            <THIRD>OOH</THIRD>
+            <FORTH>F</FORTH>
+            <PATTERN>1258-XXXX-OOH-F</PATTERN>
+            <VAR>ID</VAR>
+            <VAR>HEIGHT=14</VAR>
+            <VAR>DEPTH=16</VAR>
+            <VAR>LABEL=XLELLA VIGOUR</VAR>
+    </PRODUCT>
+
+
+//----------------WONDERSEAT--------------------------
+    <PRODUCT name='1102-1012-WSF-C'>
+        <FIRST>1102</FIRST>
+        <SECOND>1012</SECOND>
+        <THIRD>WSF</THIRD>
+        <FORTH>C</FORTH>
+        <PATTERN>1102-1012-WSF-C</PATTERN>    
+        <VAR>ID</VAR>
+        <LABEL>WS CUSHION</LABEL>
+        <VAR>BOARDERCOLOUR</VAR>
+    </PRODUCT>
+    <PRODUCT name='1102-1012-WSF-F'>
+        <FIRST>1102</FIRST>
+        <SECOND>1012</SECOND>
+        <THIRD>WSF</THIRD>
+        <FORTH>F</FORTH>
+        <PATTERN>1102-1012-WSF-F</PATTERN>    
+        <VAR>ID</VAR>
+        <LABEL>WS CUSHION</LABEL>    
+    </PRODUCT>
+        <PRODUCT name='1102-1012-WSF'>
+        <FIRST>1102</FIRST>
+        <SECOND>1012</SECOND>
+        <THIRD>WSF</THIRD>
+        <FORTH>NONE</FORTH>
+        <PATTERN>NONE</PATTERN>    
+        <VAR>ID</VAR>
+        <CONTAINS>1102-1012-WSF-F</CONTAINS>
+        <CONTAINS>1102-1012-WSF-C</CONTAINS>
+    </PRODUCT>
+    
+//------------------------ADAPTA BACKREST---------------------------   
+
+    
+    <PRODUCT name="1257-XXXX-200">
+            <FIRST>1257</FIRST>
+            <SECOND>ANY</SECOND>
+            <THIRD>200</THIRD>
+            <FORTH>NONE</FORTH>
+            <PATTERN>NONE</PATTERN>
+            <VAR>ID</VAR>
+            <VAR>HEIGHT=14</VAR>
+            <VAR>DEPTH=16</VAR>
+            <VAR>LABEL=ADAPTA 2</VAR>
+            <CONTAINS>1257-XXXX-200-C</CONTAINS>
+            <CONTAINS>1257-XXXX-200-F</CONTAINS>
+    </PRODUCT>
+    <PRODUCT name="1257-XXXX-200-C">
+            <FIRST>1257</FIRST>
+            <SECOND>ANY</SECOND>
+            <THIRD>200</THIRD>
+            <FORTH>C</FORTH>
+            <PATTERN>1257-XXXX-200-C</PATTERN>
+            <VAR>ID</VAR>
+            <VAR>HEIGHT=14</VAR>
+            <VAR>DEPTH=16</VAR>
+            <VAR>LABEL=ADAPTA 2</VAR>
+            <VAR>BOARDERCOLOUR</VAR>
+            <VAR>W</VAR>
+        <RULE>
+            <PATH>INPUT\1257-XXXX-200_SPEC_W.csv</PATH>
+            <GIVE>WIDTH</GIVE>
+            <GET>W</GET>
+        </RULE> 
+
+    </PRODUCT>
+    <PRODUCT name="1257-XXXX-200-F">
+            <FIRST>1257</FIRST>
+            <SECOND>ANY</SECOND>
+            <THIRD>200</THIRD>
+            <FORTH>F</FORTH>
+            <PATTERN>1257-XXXX-200-F</PATTERN>
+            <VAR>ID</VAR>
+            <VAR>HEIGHT=14</VAR>
+            <VAR>DEPTH=16</VAR>
+            <VAR>LABEL=ADAPTA 2</VAR>
+            <RULE>
+                <PATH>INPUT\1257-XXXX-200_SPEC_W.csv</PATH>
+                <GIVE>WIDTH</GIVE>
+                <GET>W</GET>
+            </RULE> 
+    </PRODUCT>
+</PRODUCTS>

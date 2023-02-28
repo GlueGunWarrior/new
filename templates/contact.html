@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+{% for dir in result %}
+<form action = "http://localhost:5000/result/{{ name }}/{{ dir }}" method = "GET">
+    <p><input type = "submit" value = {{ dir }} /></p>
+ </form>
+{% endfor %}
+
+<p>Home page for the Visual Studio Code Flask tutorial.</p>
+{% endblock %}

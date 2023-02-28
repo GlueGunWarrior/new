@@ -1,0 +1,65 @@
+
+input{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: Bariol_Bold;
+    padding: 8px;
+    font-size: 20px;
+    border-width: 0px;
+    
+}
+label {
+    font-family: Bariol_Bold;
+    padding: 8px;
+    font-size: 20px;
+
+}
+
+
+.body-content {
+    padding: 30px;
+    border-radius: 20px;
+    font-family:Bariol_Bold;
+    background-image: linear-gradient(to bottom right,#c0115d,#da0812);
+    width:max-content;
+    margin-top: 120px;
+    
+}
+#Current {
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+
+#G2G {
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color:white;
+    
+    color: black;
+    width: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+#noGo {
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color:white;
+    opacity: .5;
+    color: rgb(117, 115, 115);
+    width: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+@font-face {
+    font-family:Bariol_Bold;
+    src: url(Bariol_Bold.otf);
+  }

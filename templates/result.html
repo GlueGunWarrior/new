@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CUTTING LIST</title>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css') }}"  />
+ //-----------------------------------------------------------------------------------------------------       
+        <script>
+            function scrollTo(s) {
+            window.scrollBy(100,s);
+            }
+        </script>
+        <script>
+            function StartButton(state) {
+            window.location.replace("http://localhost:5000/timeEvent/{{ folderT1 }}/{{ folderT2 }}/0/"+String(state));
+            }
+        </script>
+
+        <script>
+              function toggleCutOps(name) {
+              var x = document.getElementById(String(name));
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+        </script>
+        <script>
+              function toggleNotCutOps(name) {
+              var x = document.getElementById('not'+String(name));
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+         </script>
+//=========================================================================================================w
+    </head>
+
+<body onload="scrollTo(&quot;{{ scroll }}&quot;)">
+ <div class="navbar">
+
+
+<div>
+    {% for dir in DateDirs %}
+    {% if dir==folderT1 %}
+    <a id="sel" href="http://localhost:5000/result/{{ dir }}/0/0">{{ dir }}</a>
+    {% else %}
+    <a href="http://localhost:5000/result/{{ dir }}/0/0">{{ dir }}</a>
+    {% endif %}
+    {% endfor %}
+   </div>
+<BR></BR>
+<div>
+ {% for dir in MaterialDirs %}
+ {% if dir==folderT2 %}
+ <a id="sel" href="http://localhost:5000/result/{{ folderT1 }}/{{ dir }}/0">{{ dir }} {{ np }} pieces</a>
+ {% else %}
+ <a href="http://localhost:5000/result/{{ folderT1 }}/{{ dir }}/0">{{ dir }}</a>
+ {% endif %}
+ {% endfor %}
+</div>
+</div>
+
+<div class="body-content">
+<div class="markers">
+
+
+    {% for item in result %}
+        {% if item[2] %}
+        <button class='cut' id='cut' type="button"  onclick="toggleNotCutOps(&quot;{{ item[0] }}&quot;)">
+          <h1>{{ item[0] }} </h1>
+        </button>
+      <div class="notCutOps" id="not{{ item[0] }}" style="display: none;" >
+        <button type="button" onclick="location.href='http://localhost:5000/reserect/{{ folderT1 }}/{{ folderT2 }}/{{ item[0] }}/'+ window.pageYOffset;+'/{{ state }}'">RESERECT MARKER</button>
+      </div>
+       
+      {% else %}
+  <button type="button"  onclick="toggleCutOps(&quot;{{ item[0] }}&quot;)">
+        <h1>{{ item[0] }} </h1>
+        <p> {{ item[1] }} </p>
+    </button>
+    <div class="cutOps" id="{{ item[0] }}" style="display: none;" >
+      <button type="button" onclick="location.href='http://localhost:5000/click/{{ folderT1 }}/{{ folderT2 }}/{{ item[0] }}/100/'+ window.pageYOffset;">STD CUT</button>
+      <button type="button" onclick="location.href='http://localhost:5000/click/{{ folderT1 }}/{{ folderT2 }}/{{ item[0] }}/300/'+ window.pageYOffset;">BIGGER CUT</button>
+      <button type="button" onclick="location.href='http://localhost:5000/click/{{ folderT1 }}/{{ folderT2 }}/{{ item[0] }}/0/'+ window.pageYOffset;">OFF CUT</button>
+      <button type="button" onclick="location.href='http://localhost:5000/click/{{ folderT1 }}/{{ folderT2 }}/{{ item[0] }}/0/'+ window.pageYOffset;">NOT CUT</button>
+    </div>
+
+    <br>
+      {% endif %}
+    {% endfor %}
+    
+</div>
+
+</div>
+</body>
+</html>
+wa

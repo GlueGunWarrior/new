@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css') }}"  />
+        <script>
+            function scrollTo(s) {
+            window.scrollBy(100,s);
+            }
+            </script>
+    </head>
+
+    <body onload="scrollTo(100)">
+        <div class="navbar">
+            {% block navbar %}
+            {% endblock %}
+        </div>
+
+        <div class="body-content">
+            {% block content %}
+            {% endblock %}
+            <hr/>
+            <footer>
+                
+            </footer>
+        </div>
+    </body>
+</html>
